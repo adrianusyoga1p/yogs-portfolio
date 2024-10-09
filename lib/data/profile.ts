@@ -5,7 +5,7 @@ import { STACKS } from "./stacks";
 export const PROFILE: Profile = {
   name: 'Adrianus Yoga Prasetyo',
   sureName: 'Adrian',
-  address: 'Jakarta Timur, Indonesia',
+  address: 'East Jakarta, Indonesia',
   statusOne: 'Currently work at Mariworks',
   statusTwo: 'Available for freelance',
   avatar: 'https://media.licdn.com/dms/image/v2/D5603AQFHxVHoq5lrYw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1721292147003?e=1731542400&v=beta&t=zGNZr-1wbBCI0GHOL8VBVaA8wcYGcNK8BBz6lMsyGo0',
