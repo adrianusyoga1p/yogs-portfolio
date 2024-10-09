@@ -51,21 +51,21 @@ export type Education = {
   address: string;
   level: string | null;
   major: string | null;
-  fromYear: number;
-  endYear: number;
+  fromYear: string;
+  endYear: string;
   score: number;
   scoreMax: number;
 };
 
 export type Work = {
-  logoUrl?: string;
+  logoUrl: string;
   role: string;
   companyLabel: string;
   companyFullName: string;
   address: string;
-  fromDate: Date;
-  endDate?: Date;
-  workMode: 'Full-time' | 'Part-time' | 'Freelance';
+  fromDate: string;
+  endDate?: string;
+  workMode: 'Full-time' | 'Part-time' | 'Freelance' | 'Internship';
   workType: 'Remote' | 'Hybrid' | 'On-site';
   responsibilities: string[];
 };
