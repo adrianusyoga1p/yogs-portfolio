@@ -2,11 +2,11 @@ import { Education } from "../types";
 
 export const EDUCATION: Education[] = [
   {
-    address: "Surakarta, Jawa Tengah, Indonesia",
-    fromYear: 2018,
-    endYear: 2022,
+    address: "Surakarta, Central Java, Indonesia",
+    fromYear: "2018",
+    endYear: "2022",
     logoUrl: "/svgs/logo-udb-text.png",
-    schoolFullName: "Universitas Duta Bangsa Surakarta",
+    schoolFullName: "University of Duta Bangsa Surakarta",
     schoolLabel: "UDB",
     score: 3.4,
     scoreMax: 4.0,
@@ -14,11 +14,11 @@ export const EDUCATION: Education[] = [
     major: 'Computer Engineering, (S.T)',
   },
   {
-    address: "Surakarta, Jawa Tengah, Indonesia",
-    fromYear: 2015,
-    endYear: 2018,
+    address: "Surakarta, Central Java, Indonesia",
+    fromYear: "2015",
+    endYear: "2018",
     logoUrl: "/svgs/logo-yosef.png",
-    schoolFullName: "SMA PL Santo Yosef Surakarta",
+    schoolFullName: "High School of Pangudi Luhur Saint Yosef Surakarta",
     schoolLabel: "SMA Yosef",
     score: 6.7,
     scoreMax: 10,
