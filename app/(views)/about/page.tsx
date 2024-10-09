@@ -3,7 +3,7 @@ import { Dot } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import { CardAbout, CardImage } from "./_components/card-about";
-import { Tabs } from "./_components/tab";
+import { Tabs } from "@/components/ui/tab";
 
 const AboutPage = () => {
   return (
