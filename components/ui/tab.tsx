@@ -29,7 +29,7 @@ const TabHeader = ({
   setActiveTab: (index: number) => void;
 }) => {
   return (
-    <div className="flex max-sm:flex-col sm:gap-6 gap-3 p-3 rounded-lg border border-cborder">
+    <div className="flex max-sm:flex-col gap-3 p-3 rounded-lg border border-cborder">
       {headers.map((header, index) => {
         const isHeaderIcon = typeof header === 'object';
         const label = isHeaderIcon ? header.label : header;
