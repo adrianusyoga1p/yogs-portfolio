@@ -6,36 +6,49 @@ interface TabProps {
 }
 
 interface TabsProps {
-  headers: string[];
+  headers: (string | TabHeaderProps)[];
   children: React.ReactNode[];
 }
 
 interface TabHeaderProps {
-  headers: string[];
-  activeTab: number;
-  setActiveTab: (index: number) => void;
+  label: string;
+  icon?: React.ReactNode;
 }
 
 const Tab = ({ children }: TabProps) => {
   return <div>{children}</div>;
 };
 
-const TabHeader = ({ headers, activeTab, setActiveTab }: TabHeaderProps) => {
+const TabHeader = ({
+  headers,
+  activeTab,
+  setActiveTab,
+}: {
+  headers: (string | TabHeaderProps)[];
+  activeTab: number;
+  setActiveTab: (index: number) => void;
+}) => {
   return (
-    <div className="flex gap-6 p-3 rounded-lg border border-cborder">
-      {headers.map((header, index) => (
-        <button
-          key={index}
-          className={`${
-            activeTab === index
-              ? "bg-foreground text-background"
-              : "bg-background text-foreground hover:bg-foreground hover:text-background"
-          } p-2 flex-1 flex-wrap rounded transition-colors duration-200`}
-          onClick={() => setActiveTab(index)}
-        >
-          {header}
-        </button>
-      ))}
+    <div className="flex max-sm:flex-col sm:gap-6 gap-3 p-3 rounded-lg border border-cborder">
+      {headers.map((header, index) => {
+        const isHeaderIcon = typeof header === 'object';
+        const label = isHeaderIcon ? header.label : header;
+        const icon = isHeaderIcon ? header.icon : null;
+        return (
+          <button
+            key={index}
+            className={`${
+              activeTab === index
+                ? "bg-foreground text-background"
+                : "bg-background text-foreground hover:bg-foreground hover:text-background"
+            } p-2 flex-1 flex items-center justify-center gap-3 flex-wrap rounded transition-colors duration-200`}
+            onClick={() => setActiveTab(index)}
+          >
+            {icon || null}
+            <span>{label}</span>
+          </button>
+        )
+      })}
     </div>
   );
 };
