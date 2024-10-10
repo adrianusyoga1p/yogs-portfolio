@@ -30,8 +30,6 @@ const ContactPage = () => {
     mode: "onChange",
   });
 
-  // const { isSubmiting } = form.formState;
-
   const submit = async (value: SchemaContact) => {
     const result = await sendMessages(value);
     if (result?.error) {
@@ -49,61 +47,67 @@ const ContactPage = () => {
           to the canvas of life.
         </p>
       </section>
-      <section className={success ? 'flex justify-center' : ''}>
+      <section className={success ? "flex justify-center" : "space-y-4"}>
         {!success ? (
           <Form {...form}>
-          <form onSubmit={form.handleSubmit(submit)} className="space-y-4">
-            <div className="grid md:grid-cols-2 gap-4">
+            <h1 className="font-bold text-xl">Send me a message</h1>
+            <form onSubmit={form.handleSubmit(submit)} className="space-y-4">
+              <div className="grid md:grid-cols-2 gap-4">
+                <FormField
+                  control={form.control}
+                  name="name"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Name</FormLabel>
+                      <FormControl>
+                        <Input placeholder="Input your name" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="email"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Email</FormLabel>
+                      <FormControl>
+                        <Input placeholder="Input your email" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+              </div>
               <FormField
                 control={form.control}
-                name="name"
+                name="messages"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Name</FormLabel>
+                    <FormLabel>Messages</FormLabel>
                     <FormControl>
-                      <Input placeholder="Input your name" {...field} />
+                      <Textarea
+                        placeholder="Input your messages"
+                        className="resize-none"
+                        {...field}
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
                 )}
               />
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Email</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Input your email" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-            </div>
-            <FormField
-              control={form.control}
-              name="messages"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Messages</FormLabel>
-                  <FormControl>
-                    {/* <Input placeholder="Input your messages" {...field} /> */}
-                    <Textarea placeholder="Input your messages" className="resize-none" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <button
-              className="flex gap-2 group items-center text-sm w-fit py-2 px-4 rounded-md text-background bg-foreground transition"
-              type="submit"
-            >
-              Submit
-            </button>
-          </form>
-        </Form>
-        ) : <SuccessPage/>}
+              <button
+                className="flex gap-2 group items-center text-sm w-fit py-2 px-4 rounded-md text-background bg-foreground transition"
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>
+          </Form>
+        ) : (
+          <SuccessPage />
+        )}
       </section>
     </>
   );
