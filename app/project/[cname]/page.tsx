@@ -61,7 +61,7 @@ const ProjetDetailPage = ({ params }: pageProps) => {
             {project.thumbnails.map((item) => (
               <div
                 key={item.id}
-                className="flex-shrink-0 card-ticket flex-grow-0 sm:max-w-[300px] h-60 snap-center"
+                className="flex-shrink-0 card-ticket flex-grow-0 sm:max-w-[300px] w-full h-60 snap-center"
               >
                 <Image
                   src={item?.url}
