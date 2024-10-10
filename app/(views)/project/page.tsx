@@ -1,11 +1,5 @@
 import Card from "@/components/ui/card";
 import { PROJECT } from "@/lib/data";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Adrians Projects",
-  description: "My projects",
-};
 
 const ProjectsPage = () => {
   return (
