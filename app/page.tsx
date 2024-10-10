@@ -1,7 +1,7 @@
-import BadgeTech from "@/components/ui/badge-tech";
 import Card from "@/components/ui/card";
 import CarouselCard from "@/components/ui/carousel-card";
-import { PROJECT, STACKS } from "@/lib/data";
+import CarouselStacks from "@/components/ui/carousel-stacks";
+import { PROJECT } from "@/lib/data";
 import { PROFILE } from "@/lib/data/profile";
 import { Laptop, MapPin } from "lucide-react";
 
@@ -28,15 +28,7 @@ export default function Home() {
         <h1 className="text-foreground text-lg font-semibold">
           Technology I&apos;ve Used
         </h1>
-        <div className="relative overflow-hidden min-h-10 mt-6">
-          <div className="absolute left-0 from-background bg-gradient-to-r md:w-60 w-32 h-full z-20 top-0"></div>
-          <div className="absolute right-0 from-background bg-gradient-to-l md:w-60 w-32 h-full z-20 top-0"></div>
-          <div className="space-x-4 whitespace-nowrap overflow-x-scroll scroll-hide animation-slide absolute left-0 h-full">
-            {STACKS.map((stack, i) => (
-              <BadgeTech data={stack} key={i} />
-            ))}
-          </div>
-        </div>
+        <CarouselStacks />
       </section>
       <section>
         <CarouselCard title="My Projects" data={PROJECT}>
