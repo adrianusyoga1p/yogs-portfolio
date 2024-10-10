@@ -19,7 +19,7 @@ import SuccessPage from "./_components/success-page";
 import { Textarea } from "@/components/ui/textarea";
 
 const ContactPage = () => {
-  const [error, setError] = useState(false);
+  const [success, setSuccess] = useState(false);
   const form = useForm<SchemaContact>({
     defaultValues: {
       name: "",
@@ -37,7 +37,7 @@ const ContactPage = () => {
     if (result?.error) {
       console.log(result.error);
     }
-    setError(true);
+    setSuccess(true);
     form.reset();
   };
   return (
@@ -49,8 +49,8 @@ const ContactPage = () => {
           to the canvas of life.
         </p>
       </section>
-      <section>
-        {!error ? (
+      <section className={success ? 'flex justify-center' : ''}>
+        {!success ? (
           <Form {...form}>
           <form onSubmit={form.handleSubmit(submit)} className="space-y-4">
             <div className="grid md:grid-cols-2 gap-4">
