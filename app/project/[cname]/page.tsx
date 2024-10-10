@@ -1,8 +1,9 @@
 import NotFoundPage from "@/components/not-found";
 import BadgeTech from "@/components/ui/badge-tech";
+import ButtonBack from "@/components/ui/button-back";
 import CarouselCard from "@/components/ui/carousel-card";
 import { PROJECT } from "@/lib/data";
-import { ArrowLeft, Code2, Eye } from "lucide-react";
+import { Code2, Eye } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -18,16 +19,7 @@ const ProjetDetailPage = ({ params }: pageProps) => {
   return (
     <>
       <section className="space-y-4">
-        <Link
-          href="#"
-          onClick={() => window.history.back()}
-          className="flex gap-2 group items-center text-sm w-fit py-2 pr-4 pl-2 rounded-md hover:bg-foreground transition"
-        >
-          <ArrowLeft className="h-4 w-4 group-hover:text-background" />
-          <span className="group-hover:translate-x-1 transition-transform duration-300 text-foreground group-hover:text-background">
-            Back
-          </span>
-        </Link>
+        <ButtonBack/>
         <h1 className="text-xl font-bold text-foreground">{project.title}</h1>
         <p className="text-gray-400">{project.description}</p>
       </section>
