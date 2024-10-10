@@ -13,7 +13,7 @@ type cardProps = {
 const Card = ({ data, className }: cardProps) => {
   return (
     <Link
-      href={`/project/${data.slug}`}
+      href={`/project/${data.cname}`}
       className={cn(
         "sm:max-w-[300px] block flex-grow-0 flex-shrink-0 w-full h-full group",
         className
@@ -23,7 +23,7 @@ const Card = ({ data, className }: cardProps) => {
         <div className="relative overflow-hidden">
           <Image
             src={data?.thumbnailUrl}
-            alt={`thumbnail-${data.slug}`}
+            alt={`thumbnail-${data.cname}`}
             width={700}
             className="w-full min-h-56 object-cover"
             height={0}

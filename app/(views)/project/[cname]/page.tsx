@@ -11,12 +11,12 @@ import { useRouter } from "next/navigation";
 import React from "react";
 
 type pageProps = {
-  params: { slug: string };
+  params: { cname: string };
 };
 
 const ProjetDetailPage = ({ params }: pageProps) => {
-  const { slug } = params;
-  const project = PROJECT.find((data) => data.slug === slug);
+  const { cname } = params;
+  const project = PROJECT.find((data) => data.cname === cname);
   const history = useRouter();
   if (!project) return <NotFoundPage />;
   return (
