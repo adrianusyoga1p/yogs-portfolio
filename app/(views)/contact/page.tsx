@@ -46,10 +46,11 @@ const ContactPage = () => {
           to the canvas of life.
         </p>
       </section>
+      <hr className="border-cborder" />
       <section className={success ? "flex justify-center" : "space-y-4"}>
         {!success ? (
           <Form {...form}>
-            <h1 className="font-bold text-xl">Send me a message</h1>
+            <h1 className="font-bold">Send me a message</h1>
             <form onSubmit={form.handleSubmit(submit)} className="space-y-4">
               <div className="grid md:grid-cols-2 gap-4">
                 <FormField

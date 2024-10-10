@@ -16,6 +16,7 @@ const ProjectsPage = () => {
           Several projects that I have worked on, both private and open source.
         </p>
       </section>
+      <hr className="border-cborder" />
       <section className="grid xl:grid-cols-3 md:grid-cols-2 gap-6">
         {PROJECT.filter((data) => data.id)
           .sort((a, b) => a.id - b.id)
