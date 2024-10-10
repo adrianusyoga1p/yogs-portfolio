@@ -1,7 +1,7 @@
 'use client'
 
-import { setToggle } from '@/app/redux/slices/uiSlice'
-import { RootState } from '@/app/redux/store'
+import { setToggle } from '@/lib/redux/slices/uiSlice'
+import { RootState } from '@/lib/redux/store'
 import { MENU } from '@/lib/data'
 import { PROFILE } from '@/lib/data/profile'
 import { X } from 'lucide-react'

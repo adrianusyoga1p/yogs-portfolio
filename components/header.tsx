@@ -5,7 +5,7 @@ import { Switch } from "./ui/switch-ui";
 import { Menu, Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useDispatch } from "react-redux";
-import { setToggle } from "@/app/redux/slices/uiSlice";
+import { setToggle } from "@/lib/redux/slices/uiSlice";
 
 const Header = () => {
   const { theme, setTheme } = useTheme();

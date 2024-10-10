@@ -1,6 +1,6 @@
 "use server";
 
-import { schemaContact, SchemaContact } from "@/app/(views)/contact/_shema";
+import { schemaContact, SchemaContact } from "@/app/contact/_shema";
 
 const sendMessages = async (payload: SchemaContact) => {
   const safePayload = schemaContact.safeParse(payload);

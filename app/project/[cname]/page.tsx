@@ -1,6 +1,6 @@
 "use client"
 
-import NotFoundPage from "@/app/not-found";
+import NotFoundPage from "@/components/not-found";
 import BadgeTech from "@/components/ui/badge-tech";
 import CarouselCard from "@/components/ui/carousel-card";
 import { PROJECT } from "@/lib/data";
