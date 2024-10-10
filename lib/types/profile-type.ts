@@ -19,6 +19,7 @@ export type Profile = {
 export type TechnologyStack = 
   | "React JS"
   | "Next JS"
+  | "Nuxt JS"
   | "Svelte JS"
   | "Vue JS"
   | "JavaScript"

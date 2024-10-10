@@ -3,6 +3,9 @@ import { Stack, TechnologyStack } from "../types";
 export const STACKS: Stack[] = [
   { label: 'React JS', imageUrl: '/svgs/reactjs.svg' },
   { label: 'Next JS', imageUrl: '/svgs/nextjs.svg' },
+  { label: 'Nuxt JS', imageUrl: '/svgs/nuxt.svg' },
+  { label: 'Svelte JS', imageUrl: '/svgs/svelte.svg' },
+  { label: 'Vue JS', imageUrl: '/svgs/vuejs.svg' },
   { label: 'HTML5', imageUrl: '/svgs/html5.svg' },
   { label: 'CSS3', imageUrl: '/svgs/css3.svg' },
   { label: 'Bootstrap', imageUrl: '/svgs/bootstrap.svg' },
