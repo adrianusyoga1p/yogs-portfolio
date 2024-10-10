@@ -1,5 +1,3 @@
-"use client"
-
 import NotFoundPage from "@/components/not-found";
 import BadgeTech from "@/components/ui/badge-tech";
 import CarouselCard from "@/components/ui/carousel-card";
@@ -7,7 +5,6 @@ import { PROJECT } from "@/lib/data";
 import { ArrowLeft, Code2, Eye } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import React from "react";
 
 type pageProps = {
@@ -17,14 +14,13 @@ type pageProps = {
 const ProjetDetailPage = ({ params }: pageProps) => {
   const { cname } = params;
   const project = PROJECT.find((data) => data.cname === cname);
-  const history = useRouter();
   if (!project) return <NotFoundPage />;
   return (
     <>
       <section className="space-y-4">
         <Link
           href="#"
-          onClick={history.back}
+          onClick={() => window.history.back()}
           className="flex gap-2 group items-center text-sm w-fit py-2 pr-4 pl-2 rounded-md hover:bg-foreground transition"
         >
           <ArrowLeft className="h-4 w-4 group-hover:text-background" />
