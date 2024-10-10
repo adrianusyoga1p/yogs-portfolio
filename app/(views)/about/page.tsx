@@ -3,6 +3,7 @@ import React from "react";
 import { Tabs } from "@/components/ui/tab";
 import EducationContent from "./_components/education-content";
 import WorkContent from "./_components/work-content";
+import ResumeContent from "./_components/resume-content";
 
 const AboutPage = () => {
   return (
@@ -19,11 +20,7 @@ const AboutPage = () => {
           { label: "Works Experience", icon: <BriefcaseBusiness size={16} /> },
         ]}
       >
-        <iframe
-          src="https://drive.google.com/file/d/15rdq6i0-s4zdskm19kTZZ23j8vRVCFdF/preview"
-          className='w-full h-dvh'
-          loading='lazy'
-        />
+        <ResumeContent />
         <EducationContent />
         <WorkContent />
       </Tabs>
