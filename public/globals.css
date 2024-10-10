@@ -22,7 +22,7 @@ body {
 }
 
 .animation-slide {
-  animation: slide 30s linear infinite;
+  animation: slide 20s linear infinite;
   &:hover {
     animation-play-state: paused;
   }
