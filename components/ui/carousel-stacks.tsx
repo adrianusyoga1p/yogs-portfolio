@@ -7,7 +7,7 @@ interface CarouselProps {
   scrollSpeed?: number;
 }
 
-const CarouselStacks: React.FC<CarouselProps> = ({ scrollSpeed = 50 }) => {
+const CarouselStacks = ({ scrollSpeed = 50 }: CarouselProps) => {
   const carouselRef = useRef<HTMLDivElement>(null);
 
   const totalItems = [...STACKS, ...STACKS];
