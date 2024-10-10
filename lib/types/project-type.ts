@@ -2,7 +2,7 @@ import { Stack } from "./profile-type"
 
 export type Project = {
   id: number,
-  cname: string,
+  slug: string,
   title: string,
   description: string,
   sourceCodeUrl: string,

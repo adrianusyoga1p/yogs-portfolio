@@ -9,12 +9,12 @@ import Link from "next/link";
 import React from "react";
 
 type pageProps = {
-  params: { cname: string };
+  params: { slug: string };
 };
 
 const ProjetDetailPage = ({ params }: pageProps) => {
-  const { cname } = params;
-  const project = PROJECT.find((data) => data.cname === cname);
+  const { slug } = params;
+  const project = PROJECT.find((data) => data.slug === slug);
   if (!project) return <NotFoundPage />;
   return (
     <>

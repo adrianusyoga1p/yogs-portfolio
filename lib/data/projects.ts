@@ -4,7 +4,7 @@ import { getStacks } from "./stacks";
 export const PROJECT: Project[] = [
   {
     id: 1,
-    cname: "chat-app",
+    slug: "chat-app",
     title: "Chat App - React & Firebase",
     description:
       "This chat application is created for practicing the use of JavaScript frameworks and Firebase. The technologies used in its development include: React Vite, Firebase, Tailwind CSS, Zustand, React Router DOM",
@@ -28,7 +28,7 @@ export const PROJECT: Project[] = [
   },
   {
     id: 2,
-    cname: "dashboard-boilerplate",
+    slug: "dashboard-boilerplate",
     title: "Dashboard Boilerplate - React JS",
     description:
       "Create a dashboard template using React JS which can be developed according to needs. Existing technologies include, axios, redux, tailwind css, sweetalert,",
@@ -52,7 +52,7 @@ export const PROJECT: Project[] = [
   },
   {
     id: 4,
-    cname: "itender-web-app",
+    slug: "itender-web-app",
     title: "Itender Web App",
     description:
       "Creating a web application named Itender, a product of this company, which is developed using Next.js and TypeScript, and also involves web scraping from all LPSE websites in Indonesia. My frontend colleague and I designed this website over approximately 2 to 3 months.",
@@ -82,7 +82,7 @@ export const PROJECT: Project[] = [
   },
   {
     id: 3,
-    cname: "anime-web",
+    slug: "anime-web",
     title: "Anime Weblist",
     description:
       "The initial training project uses the React JS framework by consuming the API from https://api.jikan.moe/v4 and combined the styles using Tailwind CSS",
