@@ -1,7 +1,7 @@
 import React from "react";
 import dynamic from "next/dynamic";
 import { Metadata } from "next";
-import './globals.css'
+import '../public/globals.css'
 import ClientLayout from "./client-layout";
 
 const DynamicThemeProvider = dynamic(
