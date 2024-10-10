@@ -4,7 +4,7 @@ const ResumeContent = () => {
   return (
     <div className="m-0 p-0 h-screen w-full">
       <iframe
-        src="/docs/Resume_Adrianus_Yoga_Prasetyo.pdf"
+        src={process.env.RESUME_LINK}
         className="w-full h-dvh border-none"
         loading="lazy"
         title="Resume PDF"
