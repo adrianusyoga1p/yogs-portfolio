@@ -40,10 +40,9 @@ const ContactPage = () => {
   return (
     <>
       <section className="space-y-4">
-        <h1 className="font-bold text-xl">About</h1>
+        <h1 className="font-bold text-xl">Contact</h1>
         <p className="text-gray-400">
-          An insightful glimpse into who I am - because every detail adds depth
-          to the canvas of life.
+          Feel free to get in touch and let us have a discussion about how we can work together.
         </p>
       </section>
       <hr className="border-cborder" />
