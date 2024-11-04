@@ -15,7 +15,7 @@ import { useForm } from "react-hook-form";
 import sendMessages from "@/lib/sendMessages";
 import SuccessPage from "./_components/success-page";
 import { Textarea } from "@/components/ui/textarea";
-import { schemaContact, SchemaContact } from "./_shema";
+import { schemaContact, SchemaContact } from "./_schema";
 
 const ContactPage = () => {
   const [success, setSuccess] = useState(false);
