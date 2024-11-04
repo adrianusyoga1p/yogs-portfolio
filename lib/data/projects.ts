@@ -7,7 +7,7 @@ export const PROJECT: Project[] = [
     slug: "chat-app",
     title: "Chat App - React & Firebase",
     description:
-      "This chat application is created for practicing the use of JavaScript frameworks and Firebase. The technologies used in its development include: React Vite, Firebase, Tailwind CSS, Zustand, React Router DOM",
+      "This chat application is created for practicing the use of JavaScript frameworks and Firebase. The technologies used in its development include: React Vite, Firebase, Tailwind CSS, Zustand, React Router DOM.",
     demoUrl: "https://chat-react-app-yogs.vercel.app/",
     sourceCodeUrl: "https://github.com/adrianusyoga1p/chat-react-app",
     isSourceCode: true,
@@ -31,7 +31,7 @@ export const PROJECT: Project[] = [
     slug: "dashboard-boilerplate",
     title: "Dashboard Boilerplate - React JS",
     description:
-      "Create a dashboard template using React JS which can be developed according to needs. Existing technologies include, axios, redux, tailwind css, sweetalert,",
+      "Create a dashboard template using React JS which can be developed according to needs. Existing technologies include, axios, redux, tailwind css, sweetalert.",
     demoUrl: "https://dashboard-boilerplate-yoga.vercel.app/dashboard",
     sourceCodeUrl: "https://github.com/adrianusyoga1p/dashboard-boilerplate",
     isSourceCode: true,
@@ -85,7 +85,7 @@ export const PROJECT: Project[] = [
     slug: "anime-web",
     title: "Anime Weblist",
     description:
-      "The initial training project uses the React JS framework by consuming the API from https://api.jikan.moe/v4 and combined the styles using Tailwind CSS",
+      "The initial training project uses the React JS framework by consuming the API from https://api.jikan.moe/v4 and combined the styles using Tailwind CSS.",
     demoUrl: "https://anime-react-app-rho.vercel.app/",
     sourceCodeUrl: "https://github.com/adrianusyoga1p/anime_react_app",
     isSourceCode: true,
@@ -97,6 +97,29 @@ export const PROJECT: Project[] = [
     stacks: [
       getStacks('React JS'),
       getStacks('Tailwind CSS'),
+      getStacks('JavaScript'),
+      getStacks('CSS3')
+    ]
+  },
+  {
+    id: 5,
+    slug: "dashboard-html",
+    title: "Dashboard Template FrontDev",
+    description:
+      "Developing a dashboard template for developers using HTML, CSS, and vanilla JavaScript.",
+    demoUrl: "",
+    sourceCodeUrl: "",
+    isSourceCode: false,
+    isLiveDemo: false,
+    thumbnailUrl: "/images/dashboard_page.png",
+    thumbnails: [
+      { id: 1, url: "/images/dashboard_page.png" },
+      { id: 2, url: "/images/dashboard_page2.png" },
+      { id: 3, url: "/images/dashboard_page3.png" },
+    ],
+    stacks: [
+      getStacks('HTML5'),
+      getStacks('Bootstrap'),
       getStacks('JavaScript'),
       getStacks('CSS3')
     ]
