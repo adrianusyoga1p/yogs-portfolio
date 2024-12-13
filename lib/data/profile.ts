@@ -8,7 +8,7 @@ export const PROFILE: Profile = {
   address: 'East Jakarta, Indonesia',
   statusOne: 'Currently work at Mariworks',
   statusTwo: 'Available for freelance',
-  avatar: '/public/images/avatar-profile.jpeg',
+  avatar: 'https://github.com/adrianusyoga1p.png',
   description: 'I am a Frontend Web Developer with 2 years of experience, skilled in building modern and responsive web interfaces using various tools such as Bootstrap, Tailwind CSS, React, Vue, and Next.js. With strong proficiency in JavaScript, state management using Redux, and backend integration with Firebase, I can deliver efficient and scalable web applications. My educational background as a Bachelor of Computer Science from Universitas Duta Bangsa Surakarta also provides me with a solid technical foundation to tackle challenges in web development.',
   socials: [
     {
