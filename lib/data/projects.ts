@@ -18,13 +18,13 @@ export const PROJECT: Project[] = [
       { id: 2, url: "/images/chat-app_room.png" },
     ],
     stacks: [
-      getStacks('Axios'),
-      getStacks('Firebase'),
-      getStacks('React JS'),
-      getStacks('Zustand'),
-      getStacks('Tailwind CSS'),
-      getStacks('JavaScript'),
-    ]
+      getStacks("Axios"),
+      getStacks("Firebase"),
+      getStacks("React JS"),
+      getStacks("Zustand"),
+      getStacks("Tailwind CSS"),
+      getStacks("JavaScript"),
+    ],
   },
   {
     id: 2,
@@ -42,16 +42,16 @@ export const PROJECT: Project[] = [
       { id: 2, url: "/images/dashboard-boilerplate_list.png" },
     ],
     stacks: [
-      getStacks('Axios'),
-      getStacks('React JS'),
-      getStacks('Redux'),
-      getStacks('Tailwind CSS'),
-      getStacks('JavaScript'),
-      getStacks('Postman'),
-    ]
+      getStacks("Axios"),
+      getStacks("React JS"),
+      getStacks("Redux"),
+      getStacks("Tailwind CSS"),
+      getStacks("JavaScript"),
+      getStacks("Postman"),
+    ],
   },
   {
-    id: 4,
+    id: 3,
     slug: "itender-web-app",
     title: "Itender Web App",
     description:
@@ -70,18 +70,18 @@ export const PROJECT: Project[] = [
       { id: 6, url: "/images/itender_dashboard3.png" },
     ],
     stacks: [
-      getStacks('Axios'),
-      getStacks('Next JS'),
-      getStacks('Redux'),
-      getStacks('Tailwind CSS'),
-      getStacks('TypeScript'),
-      getStacks('Postman'),
-      getStacks('Shadcn UI'),
-      getStacks('Zod'),
-    ]
+      getStacks("Axios"),
+      getStacks("Next JS"),
+      getStacks("Redux"),
+      getStacks("Tailwind CSS"),
+      getStacks("TypeScript"),
+      getStacks("Postman"),
+      getStacks("Shadcn UI"),
+      getStacks("Zod"),
+    ],
   },
   {
-    id: 3,
+    id: 4,
     slug: "anime-web",
     title: "Anime Weblist",
     description:
@@ -91,15 +91,13 @@ export const PROJECT: Project[] = [
     isSourceCode: true,
     isLiveDemo: true,
     thumbnailUrl: "/images/anime-list.png",
-    thumbnails: [
-      { id: 1, url: "/images/anime-list.png" },
-    ],
+    thumbnails: [{ id: 1, url: "/images/anime-list.png" }],
     stacks: [
-      getStacks('React JS'),
-      getStacks('Tailwind CSS'),
-      getStacks('JavaScript'),
-      getStacks('CSS3')
-    ]
+      getStacks("React JS"),
+      getStacks("Tailwind CSS"),
+      getStacks("JavaScript"),
+      getStacks("CSS3"),
+    ],
   },
   {
     id: 5,
@@ -118,10 +116,59 @@ export const PROJECT: Project[] = [
       { id: 3, url: "/images/dashboard_page3.png" },
     ],
     stacks: [
-      getStacks('HTML5'),
-      getStacks('Bootstrap'),
-      getStacks('JavaScript'),
-      getStacks('CSS3')
-    ]
+      getStacks("HTML5"),
+      getStacks("Bootstrap"),
+      getStacks("JavaScript"),
+      getStacks("CSS3"),
+    ],
+  },
+  {
+    id: 6,
+    slug: "guru-pppk-kemdikbudristek",
+    title: "Guru PPPK Kemdikbudristek",
+    description:
+      "This website is an official platform under Indonesia's Ministry of Education, Culture, Research, and Technology (Kemendikbudristek). This site serves as a resource and information hub for PPPK (Pegawai Pemerintah dengan Perjanjian Kerja) teachers, providing updates, documents, and application details regarding government employment contracts for educators.",
+    demoUrl: "https://gurupppk.kemdikbud.go.id/",
+    sourceCodeUrl: "",
+    isSourceCode: false,
+    isLiveDemo: true,
+    thumbnailUrl: "/images/guru_pppk.png",
+    thumbnails: [
+      { id: 1, url: "/images/guru_pppk.png" },
+      { id: 2, url: "/images/guru_pppk2.png" },
+      { id: 3, url: "/images/guru_pppk3.png" },
+      { id: 4, url: "/images/guru_pppk4.png" },
+    ],
+    stacks: [
+      getStacks("React JS"),
+      getStacks("Tailwind CSS"),
+      getStacks("TypeScript"),
+      getStacks("CSS3"),
+      getStacks("Axios"),
+      getStacks("Redux"),
+    ],
+  },
+  {
+    id: 7,
+    slug: "kspstk-kemdikbudristek",
+    title: "KSPS Tendik Kemdikbudristek",
+    description:
+      "This website is an official platform under Indonesia's Ministry of Education, Culture, Research, and Technology (Kemendikbudristek). It serves as a management and information system for educational personnel, providing features related to data processing, policy updates, and administrative tools for stakeholders in the education sector.",
+    demoUrl: "https://kspstendik.kemdikbud.go.id/",
+    sourceCodeUrl: "",
+    isSourceCode: false,
+    isLiveDemo: true,
+    thumbnailUrl: "/images/kspstk.png",
+    thumbnails: [
+      { id: 1, url: "/images/kspstk.png" },
+      { id: 2, url: "/images/kspstk2.png" },
+      { id: 3, url: "/images/kspstk3.png" },
+    ],
+    stacks: [
+      getStacks("HTML5"),
+      getStacks("Bootstrap"),
+      getStacks("JavaScript"),
+      getStacks("Axios"),
+    ],
   },
 ];
