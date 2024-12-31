@@ -78,10 +78,10 @@ const ProjetDetailPage = ({ params }: pageProps) => {
             {project.thumbnails.map((item) => (
               <div
                 key={item.id}
-                className="flex-shrink-0 card-ticket flex-grow-0 sm:max-w-[300px] w-full h-60 snap-center cursor-pointer relative group"
+                className="flex-shrink-0 card-ticket flex-grow-0 sm:max-w-[300px] w-full h-60 snap-center cursor-pointer relative group rounded-lg border"
               >
                 <div
-                  className="absolute inset-0 w-full h-full group-hover:opacity-100 origin-center opacity-0 z-10 bg-black/50 transition-opacity duration-200 flex items-center justify-center"
+                  className="absolute inset-0 w-full h-full group-hover:opacity-100 origin-center opacity-0 z-10 bg-black/50 rounded-lg transition-opacity duration-200 flex items-center justify-center text-white"
                   onClick={() => handleFullScreen(item.url)}
                 >
                   <Fullscreen className="w-12 h-12" />

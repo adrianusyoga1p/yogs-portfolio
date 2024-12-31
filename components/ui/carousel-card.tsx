@@ -64,14 +64,14 @@ const CarouselCard = <T,>({ title, children, data }: carouselProps<T>) => {
       ) : null}
       <div className={`flex justify-between absolute top-1/2 -translate-y-1/2 w-full z-20 ${title ? '-mt-10' : 'max-sm:-mt-3'}`}>
         <button
-          className="p-2 bg-background group hover:bg-foreground rounded-full border-cborder border"
+          className="p-2 cursor-pointer bg-background group hover:bg-foreground rounded-full border-cborder border"
           onClick={() => scroll(-1)}
           disabled={disableScrollLeft}
         >
           <ArrowLeft className="w-5 h-5 group-hover:text-background text-foreground" />
         </button>
         <button
-          className="p-2 bg-background group hover:bg-foreground rounded-full border-cborder border"
+          className="p-2 cursor-pointer bg-background group hover:bg-foreground rounded-full border-cborder border"
           onClick={() => scroll(1)}
           disabled={disableScrollRight}
         >
