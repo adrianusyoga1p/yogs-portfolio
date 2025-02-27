@@ -2,7 +2,7 @@ import { Work } from "../types";
 
 export const WORK: Work[] = [
   {
-    address: "Blok M, Jakarta Selatan",
+    address: "Blok M, Jakarta Selatan, Indonesia",
     companyFullName: "Multi Way Solutions",
     companyLabel: "MWS",
     fromDate: "Juni 2024",
