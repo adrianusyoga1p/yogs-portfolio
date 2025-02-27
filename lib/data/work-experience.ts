@@ -2,6 +2,21 @@ import { Work } from "../types";
 
 export const WORK: Work[] = [
   {
+    address: "Blok M, Jakarta Selatan",
+    companyFullName: "Multi Way Solutions",
+    companyLabel: "MWS",
+    fromDate: "Juni 2024",
+    endDate: "now",
+    role: "Frontend Engineer",
+    workType: "On-site",
+    workMode: "Full-time",
+    logoUrl: "/images/logo-mws.png",
+    responsibilities: [
+      'Developing the front appearance of a website, using front-end technology.',
+      'Frontend maintenance in terms of efficiency and also paying attention to SEO on the website',
+    ]
+  },
+  {
     address: "Surakarta, Central Java, Indonesia",
     companyFullName: "Phicos Cipta Media",
     companyLabel: "Phicos",
@@ -10,7 +25,7 @@ export const WORK: Work[] = [
     role: "Frontend Developer",
     workType: "On-site",
     workMode: "Full-time",
-    logoUrl: "/svgs/logo-phicos.png",
+    logoUrl: "/images/logo-phicos.png",
     responsibilities: [
       'Developing the front appearance of a website, using front-end technology.',
       'Presenting project results to clients.',
@@ -26,7 +41,7 @@ export const WORK: Work[] = [
     role: "Frontend Developer",
     workType: "On-site",
     workMode: "Internship",
-    logoUrl: "/svgs/logo-duxeos.webp",
+    logoUrl: "/images/logo-duxeos.webp",
     responsibilities: [
       'Play a role in developing the appearance of the website.',
       'Study system design and UI/UX design.',
