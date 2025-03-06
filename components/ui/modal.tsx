@@ -13,7 +13,7 @@ const Modal = ({ image, data, imgSrc, onClose }: ModalProps) => {
   return (
     <div
       onClick={onClose}
-      className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center"
+      className="fixed inset-0 z-50 bg-black/70 flex items-center justify-center"
     >
       {image ? (
         <Image
