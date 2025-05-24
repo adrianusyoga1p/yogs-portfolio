@@ -24,7 +24,6 @@ export const PROJECT: Project[] = [
       getStacks("Nuxt JS"),
       getStacks("Tailwind CSS"),
       getStacks("TypeScript"),
-      getStacks("Vuelidate"),
     ],
   },
   {
@@ -48,8 +47,6 @@ export const PROJECT: Project[] = [
       getStacks("Vue JS"),
       getStacks("Tailwind CSS"),
       getStacks("TypeScript"),
-      getStacks("Vuelidate"),
-      getStacks("Vite"),
       getStacks("Storybook"),
     ],
   },

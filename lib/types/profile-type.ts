@@ -35,7 +35,6 @@ export type TechnologyStack =
   | "Axios"
   | "Postman"
   | "Zod"
-  | "Vuelidate"
   | "Shadcn UI"
   | "React Hook Form"
   | "Pinia"
