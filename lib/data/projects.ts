@@ -4,6 +4,55 @@ import { getStacks } from "./stacks";
 export const PROJECT: Project[] = [
   {
     id: 1,
+    slug: "booking-embed",
+    title: "Booking Form Embed - Universal Module Definition",
+    description:
+      "This component is created for my task where I am working now as a Frontend. We called Booking Engine which this application can make reservations in general.",
+    demoUrl: "",
+    sourceCodeUrl: "",
+    isSourceCode: false,
+    isLiveDemo: false,
+    thumbnailUrl: "/images/booking-embed.png",
+    thumbnails: [
+      { id: 1, url: "/images/booking-embed.png" },
+      { id: 2, url: "/images/booking-embed2.png" },
+    ],
+    stacks: [
+      getStacks("Axios"),
+      getStacks("Pinia"),
+      getStacks("Vue JS"),
+      getStacks("Tailwind CSS"),
+      getStacks("TypeScript"),
+      getStacks("Storybook"),
+    ],
+  },
+  {
+    id: 2,
+    slug: "tixfly-microsite",
+    title: "TixFyl Microsite",
+    description:
+      "This microsite is created for my task where I am working now as a Frontend. This microsite using by client to transaction their events.",
+    demoUrl: "https://dev.tix.chat",
+    sourceCodeUrl: "",
+    isSourceCode: false,
+    isLiveDemo: true,
+    thumbnailUrl: "/images/tixfly.png",
+    thumbnails: [
+      { id: 1, url: "/images/tixfly.png" },
+      { id: 2, url: "/images/tixfly2.png" },
+      { id: 3, url: "/images/tixfly3.png" },
+    ],
+    stacks: [
+      getStacks("Axios"),
+      getStacks("Pinia"),
+      getStacks("Nuxt JS"),
+      getStacks("Tailwind CSS"),
+      getStacks("TypeScript"),
+      getStacks("Storybook"),
+    ],
+  },
+  {
+    id: 3,
     slug: "chat-app",
     title: "Chat App - React & Firebase",
     description:
@@ -27,7 +76,7 @@ export const PROJECT: Project[] = [
     ],
   },
   {
-    id: 2,
+    id: 4,
     slug: "dashboard-boilerplate",
     title: "Dashboard Boilerplate - React JS",
     description:
@@ -51,7 +100,7 @@ export const PROJECT: Project[] = [
     ],
   },
   {
-    id: 3,
+    id: 5,
     slug: "itender-web-app",
     title: "Itender Web App",
     description:
@@ -81,7 +130,7 @@ export const PROJECT: Project[] = [
     ],
   },
   {
-    id: 4,
+    id: 6,
     slug: "anime-web",
     title: "Anime Weblist",
     description:
@@ -100,7 +149,7 @@ export const PROJECT: Project[] = [
     ],
   },
   {
-    id: 5,
+    id: 7,
     slug: "dashboard-html",
     title: "Dashboard Template FrontDev",
     description:
@@ -123,7 +172,7 @@ export const PROJECT: Project[] = [
     ],
   },
   {
-    id: 6,
+    id: 8,
     slug: "guru-pppk-kemdikbudristek",
     title: "Guru PPPK Kemdikbudristek",
     description:
@@ -149,7 +198,7 @@ export const PROJECT: Project[] = [
     ],
   },
   {
-    id: 7,
+    id: 9,
     slug: "kspstk-kemdikbudristek",
     title: "KSPS Tendik Kemdikbudristek",
     description:

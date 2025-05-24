@@ -21,6 +21,8 @@ export const STACKS: Stack[] = [
   { label: 'TypeScript', imageUrl: '/svgs/ts.svg' },
   { label: 'Firebase', imageUrl: '/svgs/firebase.svg' },
   { label: 'Postman', imageUrl: '/svgs/postman.svg' },
+  { label: 'Pinia', imageUrl: '/svgs/pinia.svg' },
+  { label: 'Storybook', imageUrl: '/svgs/storybook.svg' },
 ]
 
 export const getStacks = (key: TechnologyStack) => STACKS.find(x => x.label === key)!;

@@ -1,22 +1,22 @@
 import { LucideIcon } from "lucide-react";
 
 export type Profile = {
-  name: string,
-  sureName: string,
-  avatar: string,
-  address: string,
-  statusOne: string,
-  statusTwo: string,
-  description: string,
+  name: string;
+  sureName: string;
+  avatar: string;
+  address: string;
+  statusOne: string;
+  statusTwo: string;
+  description: string;
   socials: {
     label: string;
     href: string;
     icon: LucideIcon;
   }[];
   skills: Stack[];
-}
+};
 
-export type TechnologyStack = 
+export type TechnologyStack =
   | "React JS"
   | "Next JS"
   | "Nuxt JS"
@@ -38,12 +38,13 @@ export type TechnologyStack =
   | "Vuelidate"
   | "Shadcn UI"
   | "React Hook Form"
-;
+  | "Pinia"
+  | "Storybook";
 
 export type Stack = {
-  label: TechnologyStack,
-  imageUrl: string,
-}
+  label: TechnologyStack;
+  imageUrl: string;
+};
 
 export type Education = {
   logoUrl: string;
@@ -66,7 +67,7 @@ export type Work = {
   address: string;
   fromDate: string;
   endDate?: string;
-  workMode: 'Full-time' | 'Part-time' | 'Freelance' | 'Internship';
-  workType: 'Remote' | 'Hybrid' | 'On-site';
+  workMode: "Full-time" | "Part-time" | "Freelance" | "Internship";
+  workType: "Remote" | "Hybrid" | "On-site";
   responsibilities: string[];
 };
