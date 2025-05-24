@@ -4,6 +4,30 @@ import { getStacks } from "./stacks";
 export const PROJECT: Project[] = [
   {
     id: 1,
+    slug: "tixfly-microsite",
+    title: "TixFly Microsite",
+    description:
+      "This microsite is created for my task where I am working now as a Frontend. This microsite using by client to transaction their events.",
+    demoUrl: "https://dev.tix.chat",
+    sourceCodeUrl: "",
+    isSourceCode: false,
+    isLiveDemo: true,
+    thumbnailUrl: "/images/tixfly.png",
+    thumbnails: [
+      { id: 1, url: "/images/tixfly.png" },
+      { id: 2, url: "/images/tixfly2.png" },
+      { id: 3, url: "/images/tixfly3.png" },
+    ],
+    stacks: [
+      getStacks("Axios"),
+      getStacks("Pinia"),
+      getStacks("Nuxt JS"),
+      getStacks("Tailwind CSS"),
+      getStacks("TypeScript"),
+    ],
+  },
+  {
+    id: 2,
     slug: "booking-embed",
     title: "Booking Form Embed - Universal Module Definition",
     description:
@@ -21,31 +45,6 @@ export const PROJECT: Project[] = [
       getStacks("Axios"),
       getStacks("Pinia"),
       getStacks("Vue JS"),
-      getStacks("Tailwind CSS"),
-      getStacks("TypeScript"),
-      getStacks("Storybook"),
-    ],
-  },
-  {
-    id: 2,
-    slug: "tixfly-microsite",
-    title: "TixFyl Microsite",
-    description:
-      "This microsite is created for my task where I am working now as a Frontend. This microsite using by client to transaction their events.",
-    demoUrl: "https://dev.tix.chat",
-    sourceCodeUrl: "",
-    isSourceCode: false,
-    isLiveDemo: true,
-    thumbnailUrl: "/images/tixfly.png",
-    thumbnails: [
-      { id: 1, url: "/images/tixfly.png" },
-      { id: 2, url: "/images/tixfly2.png" },
-      { id: 3, url: "/images/tixfly3.png" },
-    ],
-    stacks: [
-      getStacks("Axios"),
-      getStacks("Pinia"),
-      getStacks("Nuxt JS"),
       getStacks("Tailwind CSS"),
       getStacks("TypeScript"),
       getStacks("Storybook"),
