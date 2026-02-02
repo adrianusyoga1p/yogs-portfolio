@@ -24,9 +24,11 @@ const EducationContent = () => {
                 <p className="text-sm flex items-center">
                   <Dot className="sm:hidden" /> {data.level || "-"}
                 </p>
-                <p className="text-sm flex items-center">
-                  <Dot /> {data.major || "-"}
-                </p>
+                {data.major && (
+                  <p className="text-sm flex items-center">
+                    <Dot /> {data.major}
+                  </p>
+                )}
               </div>
               <div className="flex max-sm:flex-col sm:items-center text-gray-400">
                 <p className="text-sm flex items-center">
